@@ -36,3 +36,96 @@
     transform: rotate(360deg);
   }
 }
+
+.contentTask{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.listTask{
+  list-style: none;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+}
+
+.titleTask{
+  text-align: center;
+}
+
+.trash{
+  width:30px;
+  border:none;
+  background: none;
+}
+
+ul{
+  padding: 0px;
+}
+
+.taskBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 5%;
+  position: absolute;
+  z-index:5;
+  top: 50%;
+  right: 41%;
+  background: white;
+  overflow: hidden;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+p{
+  text-align: center;
+}
+
+.addTask{
+  width:80px;
+  height:80px;
+  background: blue;
+  border-radius:50%;
+  border: none;
+  position: absolute;
+  bottom: -39px;
+  right:685px;
+  color: white;
+}
+
+.closeButton{
+  background: red;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  width: 200px;
+  height: 40px;
+}
+
+.addButton{
+  background: green;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  width: 200px;
+  height: 40px;
+}
+
+.checked{
+  text-decoration: line-through;
+}
